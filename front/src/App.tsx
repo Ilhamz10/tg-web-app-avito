@@ -1,10 +1,10 @@
 import WebApp from '@twa-dev/sdk';
 import { useEffect } from 'react';
-import { RouterProvider, createHashRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import TaskListPage from './pages/TaskList/TaskListPage';
 import AddTaskPage from './pages/AddTask/AddTaskPage';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <TaskListPage />,
